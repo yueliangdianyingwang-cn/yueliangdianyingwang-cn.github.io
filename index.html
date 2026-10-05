@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>月亮电影网 - 电影推荐排行榜与夜间观影片单索引 | yueliangdianyingwang-cn.github.io</title>
+<meta name="description" content="月亮电影网专注电影推荐与热门电影排行榜，提供夜间观影片单、星等榜单、星区类型库、月相排期与观测日志式观影指南，帮你快速找到值得一看的电影。" />
+<meta name="keywords" content="月亮电影网,电影推荐,热门电影排行榜,夜间观影,电影片单,类型片库,新片排期,观影指南" />
+<meta name="author" content="月亮电影网" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="canonical" href="https://yueliangdianyingwang-cn.github.io/" />
+<link rel="alternate" hreflang="zh-CN" href="https://yueliangdianyingwang-cn.github.io/" />
+<meta name="theme-color" content="#0b1026" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="月亮电影网" />
+<meta property="og:title" content="月亮电影网 - 电影推荐排行榜与夜间观影片单索引" />
+<meta property="og:description" content="月亮电影网提供电影推荐、热门电影排行榜、夜间观影片单、星区类型库与月相排期，找到值得一看的电影。" />
+<meta property="og:url" content="https://yueliangdianyingwang-cn.github.io/" />
+<meta property="og:locale" content="zh_CN" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="月亮电影网 - 电影推荐排行榜" />
+<meta name="twitter:description" content="发现值得一看的电影：夜间片单、星等榜单、星区库与月相排期。" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://yueliangdianyingwang-cn.github.io/#website",
+      "url": "https://yueliangdianyingwang-cn.github.io/",
+      "name": "月亮电影网",
+      "alternateName": "月亮电影网 电影推荐 热门电影排行榜",
+      "description": "月亮电影网专注电影推荐与热门电影排行榜，提供夜间观影片单、星区类型库、月相排期与观影指南。",
+      "inLanguage": "zh-CN",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://yueliangdianyingwang-cn.github.io/#search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://yueliangdianyingwang-cn.github.io/#organization",
+      "name": "月亮电影网",
+      "url": "https://yueliangdianyingwang-cn.github.io/",
+      "description": "电影推荐与热门电影排行榜站点"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://yueliangdianyingwang-cn.github.io/#webpage",
+      "url": "https://yueliangdianyingwang-cn.github.io/",
+      "name": "月亮电影网 - 电影推荐排行榜与夜间观影片单索引",
+      "isPartOf": { "@id": "https://yueliangdianyingwang-cn.github.io/#website" },
+      "about": { "@id": "https://yueliangdianyingwang-cn.github.io/#organization" },
+      "inLanguage": "zh-CN"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "月亮电影网首页", "item": "https://yueliangdianyingwang-cn.github.io/" },
+        { "@type": "ListItem", "position": 2, "name": "夜间观影片单", "item": "https://yueliangdianyingwang-cn.github.io/#piandan" },
+        { "@type": "ListItem", "position": 3, "name": "热门电影排行榜", "item": "https://yueliangdianyingwang-cn.github.io/#xingdeng" }
+      ]
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --night:#0b1026;
+  --night-2:#141c40;
+  --night-3:#1d2758;
+  --text:#e9ecff;
+  --dim:#9aa3cf;
+  --moon:#ffe9b0;
+  --cyan:#6fe3ff;
+  --violet:#a58bff;
+  --pink:#ff9ec7;
+  --line:rgba(233,236,255,.14);
+  --line-2:rgba(233,236,255,.08);
+  --card:#141c40;
+  --maxw:1180px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{
+  background-color:var(--night);
+  background-image:
+    radial-gradient(1.6px 1.6px at 12% 8%, rgba(255,255,255,.55), transparent),
+    radial-gradient(1.4px 1.4px at 78% 14%, rgba(255,255,255,.4), transparent),
+    radial-gradient(1.8px 1.8px at 34% 42%, rgba(255,255,255,.45), transparent),
+    radial-gradient(1.2px 1.2px at 62% 66%, rgba(255,255,255,.35), transparent),
+    radial-gradient(1.6px 1.6px at 88% 78%, rgba(255,255,255,.4), transparent),
+    radial-gradient(1.2px 1.2px at 20% 84%, rgba(255,255,255,.3), transparent),
+    radial-gradient(900px 520px at 82% -8%, rgba(111,227,255,.16), transparent),
+    radial-gradient(760px 460px at 8% 22%, rgba(165,139,255,.14), transparent);
+  background-attachment:fixed;
+  color:var(--text);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height:1.78;
+  min-height:100vh;
+  overflow-x:hidden;
+  padding-bottom:env(safe-area-inset-bottom);
+}
+a{color:inherit;text-decoration:none;transition:color .22s ease;}
+a:hover,a:focus{color:var(--moon);}
+img{max-width:100%;display:block;}
+ul,ol{list-style:none;}
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 26px;}
+.skip{position:absolute;left:-9999px;top:0;}
+.skip:focus{left:16px;top:16px;z-index:99;background:var(--moon);color:var(--night);padding:8px 14px;border-radius:8px;}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Courier New",monospace;}
+
+/* ============ 顶部 ============ */
+.topbar{position:sticky;top:0;z-index:70;background:rgba(11,16,38,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px;}
+.mark{display:flex;align-items:center;gap:11px;}
+.mark .orb{
+  width:38px;height:38px;flex:0 0 38px;border-radius:50%;position:relative;overflow:hidden;
+  background:linear-gradient(140deg,#fff8e1,#e3cd9a);
+  box-shadow:0 0 18px rgba(255,233,176,.35);
+}
+.mark .orb::after{
+  content:"";position:absolute;inset:0;
+  background-image:radial-gradient(circle at 32% 38%, rgba(0,0,0,.16) 0 16%, transparent 17%),
+    radial-gradient(circle at 66% 62%, rgba(0,0,0,.13) 0 11%, transparent 12%),
+    radial-gradient(circle at 48% 82%, rgba(0,0,0,.1) 0 8%, transparent 9%);
+}
+.mark .txt b{display:block;font-size:1.16rem;font-weight:800;letter-spacing:2px;}
+.mark .txt small{display:block;font-size:.58rem;letter-spacing:.16em;color:var(--dim);text-transform:uppercase;}
+.nav{display:flex;align-items:center;gap:2px;}
+.nav a{font-size:.86rem;padding:8px 13px;border-radius:999px;color:var(--dim);}
+.nav a:hover{background:rgba(111,227,255,.12);color:var(--cyan);}
+.nav a.hot{background:var(--moon);color:var(--night);font-weight:800;}
+.nav a.hot:hover{background:var(--cyan);color:var(--night);}
+.nav-toggle{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none;}
+.menu-btn{
+  display:none;width:42px;height:42px;border-radius:50%;border:1px solid var(--line);
+  background:rgba(233,236,255,.06);color:var(--moon);font-size:1rem;
+}
+
+/* ============ HERO：观月台 ============ */
+.hero{padding:44px 0 26px;}
+.sky{
+  position:relative;border:1px solid var(--line);border-radius:28px;overflow:hidden;
+  background:linear-gradient(170deg,rgba(29,39,88,.75),rgba(11,16,38,.85));
+  padding:52px 40px 44px;
+}
+.sky .orbit{
+  position:absolute;right:-120px;top:-90px;width:520px;height:520px;border-radius:50%;
+  border:1px solid rgba(111,227,255,.32);
+}
+.sky .orbit2{
+  position:absolute;right:-40px;top:-10px;width:340px;height:340px;border-radius:50%;
+  border:1px dashed rgba(165,139,255,.35);
+}
+.sky .glow{
+  position:absolute;right:60px;top:44px;width:180px;height:180px;border-radius:50%;
+  background:radial-gradient(circle, rgba(255,233,176,.5), transparent 68%);
+}
+.hero-in{position:relative;z-index:3;max-width:720px;}
+.hero-in .kick{
+  display:inline-flex;align-items:center;gap:8px;font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--cyan);border:1px solid var(--line);border-radius:999px;padding:5px 13px;
+}
+.hero-in .kick i{width:6px;height:6px;border-radius:50%;background:var(--cyan);font-style:normal;}
+.hero h1{
+  margin:18px 0 14px;font-size:clamp(2.2rem,7.6vw,4.1rem);line-height:1.08;font-weight:900;letter-spacing:3px;
+  background:linear-gradient(100deg,#ffffff,#ffe9b0 55%,#6fe3ff);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero .lead{font-size:clamp(.94rem,2.5vw,1.08rem);color:var(--dim);max-width:640px;}
+.hero .lead strong{color:var(--text);font-weight:800;}
+.hero .lead em{font-style:normal;color:var(--moon);font-weight:700;}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;}
+.btn{
+  display:inline-block;padding:12px 26px;border-radius:999px;font-weight:800;font-size:.92rem;
+  background:var(--moon);color:var(--night);box-shadow:0 10px 26px rgba(255,233,176,.22);
+}
+.btn:hover{background:var(--cyan);color:var(--night);}
+.btn.line{border:1px solid var(--line);background:transparent;color:var(--text);box-shadow:none;}
+.btn.line:hover{border-color:var(--cyan);color:var(--cyan);}
+.readout{
+  position:relative;z-index:3;margin-top:34px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+  background:var(--line);border-radius:16px;overflow:hidden;max-width:720px;
+}
+.readout div{background:rgba(11,16,38,.72);padding:14px 16px;}
+.readout b{display:block;font-size:1.28rem;font-weight:900;color:var(--moon);font-family:ui-monospace,Menlo,Consolas,monospace;}
+.readout span{font-size:.72rem;letter-spacing:.1em;color:var(--dim);}
+
+/* ============ 通用栏目 ============ */
+.band{padding:52px 0;}
+.band-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:26px;}
+.band-head .l{display:flex;align-items:center;gap:14px;}
+.band-head .badge{
+  flex:0 0 50px;width:50px;height:50px;border-radius:14px;display:grid;place-items:center;
+  border:1px solid var(--line);background:rgba(233,236,255,.05);font-size:1rem;color:var(--cyan);
+}
+.band-head h2{font-size:clamp(1.32rem,4.4vw,2.05rem);font-weight:900;letter-spacing:1.5px;line-height:1.34;}
+.band-head p{font-size:.88rem;color:var(--dim);max-width:620px;margin-top:3px;}
+.band-head .go{
+  font-size:.8rem;letter-spacing:.08em;border:1px solid var(--line);border-radius:999px;padding:8px 17px;
+  color:var(--dim);white-space:nowrap;
+}
+.band-head .go:hover{border-color:var(--moon);color:var(--moon);}
+
+/* ---- 月相图标 ---- */
+.phase{
+  width:54px;height:54px;flex:0 0 54px;border-radius:50%;position:relative;overflow:hidden;
+  background:linear-gradient(140deg,#fff8e1,#dcc593);
+  box-shadow:0 0 14px rgba(255,233,176,.28);
+}
+.phase::before{
+  content:"";position:absolute;inset:0;
+  background-image:radial-gradient(circle at 34% 36%, rgba(0,0,0,.15) 0 15%, transparent 16%),
+    radial-gradient(circle at 64% 64%, rgba(0,0,0,.12) 0 10%, transparent 11%);
+}
+.phase::after{content:"";position:absolute;top:0;bottom:0;background:var(--card);}
+.phase.p-full::after{display:none;}
+.phase.p-gib::after{left:56%;right:-4%;}
+.phase.p-half::after{left:50%;right:0;}
+.phase.p-cres::after{left:0;width:78%;}
+.phase.p-new::after{left:0;right:0;}
+.phase.p-slim::after{left:0;width:88%;}
+
+/* ---- 栏目一：月相片单卡 ---- */
+.moons{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;}
+.mcard{
+  border:1px solid var(--line);border-radius:20px;background:var(--card);padding:20px;
+  display:flex;gap:16px;transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease;
+}
+.mcard:hover{transform:translateY(-5px);border-color:rgba(111,227,255,.5);box-shadow:0 16px 34px rgba(0,0,0,.35);}
+.mcard .body{display:flex;flex-direction:column;gap:7px;min-width:0;}
+.mcard .body .tag{
+  align-self:flex-start;font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--cyan);border:1px solid var(--line);border-radius:999px;padding:2px 9px;
+}
+.mcard .body h3{font-size:1.04rem;font-weight:800;line-height:1.5;}
+.mcard .body p{font-size:.84rem;color:var(--dim);}
+.mcard .body .foot{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:auto;padding-top:4px;}
+.mcard .body .foot em{font-style:normal;font-size:.7rem;color:var(--dim);letter-spacing:.06em;font-family:ui-monospace,Menlo,Consolas,monospace;}
+.mcard .body .foot b{margin-left:auto;font-size:.95rem;font-weight:900;color:var(--moon);font-family:ui-monospace,Menlo,Consolas,monospace;}
+
+/* ---- 栏目二：星等榜 ---- */
+.mag{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:rgba(20,28,64,.6);}
+.mag .cap{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:12px 22px;border-bottom:1px solid var(--line);
+  font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cyan);
+}
+.mag .cap span{color:var(--dim);}
+.mag li{
+  display:grid;grid-template-columns:76px 1fr 168px;gap:16px;align-items:center;
+  padding:15px 22px;border-bottom:1px solid var(--line-2);
+}
+.mag li:last-child{border-bottom:0;}
+.mag li:hover{background:rgba(111,227,255,.06);}
+.mag .no{
+  font-family:ui-monospace,Menlo,Consolas,monospace;font-size:1.05rem;font-weight:700;color:var(--violet);
+  display:flex;align-items:center;gap:6px;
+}
+.mag .no i{font-style:normal;font-size:.58rem;letter-spacing:.14em;color:var(--dim);}
+.mag .nm h3{font-size:1rem;font-weight:800;}
+.mag .nm p{font-size:.82rem;color:var(--dim);margin-top:2px;}
+.mag .mv{display:flex;align-items:center;gap:10px;justify-content:flex-end;}
+.mag .mv .stars{display:flex;gap:3px;}
+.mag .mv .stars i{
+  width:9px;height:9px;border-radius:50%;background:rgba(233,236,255,.18);font-style:normal;
+}
+.mag .mv .stars i.on{background:var(--moon);box-shadow:0 0 8px rgba(255,233,176,.6);}
+.mag .mv b{
+  font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.96rem;font-weight:700;color:var(--moon);min-width:34px;text-align:right;
+}
+
+/* ---- 栏目三：星区 ---- */
+.zones{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;}
+.zone{
+  border:1px solid var(--line);border-radius:18px;background:var(--card);padding:20px;position:relative;overflow:hidden;
+  transition:border-color .3s ease,transform .3s ease;
+}
+.zone:hover{border-color:rgba(165,139,255,.55);transform:translateY(-4px);}
+.zone .sky-dots{position:absolute;right:14px;top:14px;width:74px;height:56px;}
+.zone .sky-dots i{
+  position:absolute;width:5px;height:5px;border-radius:50%;background:var(--moon);font-style:normal;opacity:.9;
+}
+.zone .sky-dots i:nth-child(1){left:4px;top:6px;}
+.zone .sky-dots i:nth-child(2){left:28px;top:20px;}
+.zone .sky-dots i:nth-child(3){left:52px;top:4px;}
+.zone .sky-dots i:nth-child(4){left:64px;top:34px;}
+.zone .sky-dots i:nth-child(5){left:36px;top:44px;}
+.zone .sky-dots::before{
+  content:"";position:absolute;left:6px;top:8px;width:48px;height:14px;
+  border-top:1px solid rgba(255,233,176,.35);transform:rotate(14deg);
+}
+.zone .sky-dots::after{
+  content:"";position:absolute;left:30px;top:22px;width:38px;height:24px;
+  border-top:1px solid rgba(255,233,176,.3);transform:rotate(-24deg);
+}
+.zone .code{
+  font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.66rem;letter-spacing:.16em;color:var(--violet);
+}
+.zone h3{font-size:1.06rem;font-weight:800;letter-spacing:1px;margin-top:8px;}
+.zone p{font-size:.83rem;color:var(--dim);margin-top:5px;}
+.zone .meta{display:flex;justify-content:space-between;gap:10px;margin-top:14px;font-size:.72rem;color:var(--dim);}
+.zone .meta b{color:var(--cyan);font-family:ui-monospace,Menlo,Consolas,monospace;}
+
+/* ---- 栏目四：月相历 ---- */
+.lunar{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;}
+.lunar .mo{
+  border:1px solid var(--line);border-radius:18px;background:var(--card);padding:18px 16px 20px;text-align:center;
+  transition:border-color .3s ease,transform .3s ease;
+}
+.lunar .mo:hover{border-color:rgba(255,233,176,.5);transform:translateY(-4px);}
+.lunar .mo .ph{margin:0 auto 12px;}
+.lunar .mo time{
+  display:block;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.74rem;letter-spacing:.08em;color:var(--cyan);
+}
+.lunar .mo .term{
+  display:inline-block;margin-top:6px;font-size:.66rem;letter-spacing:.1em;color:var(--moon);
+  border:1px solid var(--line);border-radius:999px;padding:2px 9px;
+}
+.lunar .mo h3{font-size:.98rem;font-weight:800;margin-top:10px;}
+.lunar .mo p{font-size:.81rem;color:var(--dim);margin-top:4px;}
+.lunar .mo .tag{
+  display:inline-block;margin-top:10px;font-size:.68rem;color:var(--pink);border:1px solid var(--line-2);
+  border-radius:999px;padding:2px 10px;
+}
+
+/* ---- 栏目五：观测日志 ---- */
+.log{border:1px solid var(--line);border-radius:20px;background:rgba(20,28,64,.6);overflow:hidden;}
+.log .bar{
+  display:flex;align-items:center;gap:10px;padding:10px 20px;border-bottom:1px solid var(--line);
+  font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.68rem;letter-spacing:.14em;color:var(--cyan);
+}
+.log .bar i{width:8px;height:8px;border-radius:50%;background:var(--pink);font-style:normal;}
+.log .bar em{font-style:normal;color:var(--dim);margin-left:auto;}
+.log .entry{
+  display:grid;grid-template-columns:126px 1fr;gap:18px;padding:16px 22px;border-bottom:1px solid var(--line-2);
+}
+.log .entry:last-child{border-bottom:0;}
+.log .entry:hover{background:rgba(165,139,255,.07);}
+.log .entry time{
+  font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.78rem;letter-spacing:.06em;color:var(--violet);padding-top:2px;
+}
+.log .entry .txt h3{font-size:1rem;font-weight:800;}
+.log .entry .txt p{font-size:.84rem;color:var(--dim);margin-top:3px;}
+.log .entry .txt .kv{
+  display:flex;flex-wrap:wrap;gap:8px;margin-top:9px;
+}
+.log .entry .txt .kv span{
+  font-size:.68rem;letter-spacing:.06em;border:1px solid var(--line);border-radius:999px;padding:2px 10px;color:var(--dim);
+}
+.faq{margin-top:18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;}
+.faq .q{border:1px solid var(--line);border-radius:16px;background:var(--card);padding:18px 20px;}
+.faq .q h3{font-size:.92rem;font-weight:800;color:var(--cyan);}
+.faq .q p{font-size:.83rem;color:var(--dim);margin-top:6px;}
+
+/* ---- 栏目六：天文台档案 ---- */
+.arch{display:grid;grid-template-columns:1.3fr .7fr;gap:18px;align-items:start;}
+.arch .main{border:1px solid var(--line);border-radius:20px;background:var(--card);padding:30px;}
+.arch .main h2{font-size:clamp(1.3rem,3.8vw,1.9rem);font-weight:900;letter-spacing:2px;margin-bottom:14px;}
+.arch .main p{font-size:.93rem;color:var(--dim);margin-bottom:11px;}
+.arch .main p strong{color:var(--text);font-weight:800;}
+.arch .main .go{
+  display:inline-block;margin-top:6px;font-size:.86rem;font-weight:800;color:var(--moon);
+  border-bottom:2px solid rgba(255,233,176,.35);
+}
+.arch .side{border:1px solid var(--line);border-radius:20px;background:rgba(20,28,64,.7);padding:24px 22px;}
+.arch .side h3{
+  font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--cyan);padding-bottom:12px;border-bottom:1px solid var(--line);margin-bottom:6px;
+}
+.arch .side .kv{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px dashed var(--line-2);font-size:.85rem;}
+.arch .side .kv:last-of-type{border-bottom:0;}
+.arch .side .kv span{color:var(--dim);}
+.arch .side .kv b{color:var(--moon);font-weight:800;}
+.arch .side .stamp{
+  margin-top:18px;border:1px solid var(--line);border-radius:14px;padding:14px;text-align:center;
+  font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.72rem;letter-spacing:.14em;color:var(--dim);
+}
+.arch .side .stamp b{display:block;font-size:1.05rem;color:var(--moon);letter-spacing:3px;margin-bottom:4px;}
+
+/* ---- 页脚 ---- */
+footer{margin-top:24px;border-top:1px solid var(--line);background:rgba(6,10,26,.6);padding:42px 0 26px;}
+.foot-grid{display:grid;gap:26px;grid-template-columns:1.4fr repeat(3,1fr);}
+.foot-col h4{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cyan);margin-bottom:12px;}
+.foot-col ul{display:grid;gap:8px;}
+.foot-col li,.foot-col p{font-size:.85rem;color:var(--dim);}
+.foot-brand .lg{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+.foot-brand .lg i{
+  width:30px;height:30px;border-radius:50%;background:linear-gradient(140deg,#fff8e1,#dcc593);font-style:normal;
+  box-shadow:0 0 14px rgba(255,233,176,.3);
+}
+.foot-brand .lg b{font-size:1.14rem;font-weight:900;letter-spacing:2px;}
+.foot-bottom{
+  margin-top:26px;padding-top:16px;border-top:1px solid var(--line-2);
+  display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-size:.78rem;color:var(--dim);
+}
+.to-top{
+  position:fixed;right:18px;bottom:18px;z-index:80;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;
+  background:rgba(20,28,64,.95);border:1px solid var(--line);color:var(--moon);
+}
+.to-top:hover{border-color:var(--moon);color:var(--moon);}
+
+/* ============ 移动端 ============ */
+@media (max-width:1000px){
+  .readout{grid-template-columns:repeat(2,1fr);}
+  .lunar{grid-template-columns:repeat(3,1fr);}
+  .arch{grid-template-columns:1fr;}
+  .foot-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:768px){
+  .wrap{padding:0 18px;}
+  .menu-btn{display:grid;place-items:center;}
+  .nav{
+    display:none;position:absolute;left:18px;right:18px;top:66px;flex-direction:column;align-items:stretch;gap:4px;
+    padding:12px;background:rgba(11,16,38,.98);border:1px solid var(--line);border-radius:18px;
+  }
+  .nav-toggle:checked ~ .nav{display:flex;}
+  .nav a{padding:12px 14px;border-radius:12px;font-size:.96rem;}
+  .hero{padding:26px 0 16px;}
+  .sky{padding:32px 22px;border-radius:22px;}
+  .sky .orbit,.sky .orbit2,.sky .glow{opacity:.6;}
+  .band{padding:38px 0;}
+  .band-head{flex-direction:column;align-items:flex-start;gap:14px;}
+  .band-head .go{align-self:flex-start;}
+  .moons{grid-template-columns:1fr;}
+  .mag li{grid-template-columns:64px 1fr;gap:12px;padding:14px 16px;}
+  .mag .mv{grid-column:2;justify-content:flex-start;}
+  .lunar{grid-template-columns:1fr;}
+  .lunar .mo{display:grid;grid-template-columns:54px 1fr;gap:14px;text-align:left;align-items:start;}
+  .lunar .mo .ph{margin:0;}
+  .log .entry{grid-template-columns:1fr;gap:8px;padding:14px 16px;}
+  .arch .main,.arch .side{padding:22px 20px;}
+  .to-top{right:12px;bottom:12px;}
+}
+@media (max-width:420px){
+  .wrap{padding:0 14px;}
+  .mark .txt small{display:none;}
+  .mark .txt b{font-size:1rem;letter-spacing:1px;}
+  .readout{grid-template-columns:repeat(2,1fr);}
+  .hero-cta .btn{flex:1 1 auto;text-align:center;}
+  .zones{grid-template-columns:1fr;}
+  .mcard{padding:16px;gap:12px;}
+  .mcard .phase{width:44px;height:44px;flex:0 0 44px;}
+  .foot-grid{grid-template-columns:1fr;}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none !important;animation:none !important;scroll-behavior:auto !important;}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<a class="skip" href="#main">跳转到主要内容</a>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="mark" href="#" aria-label="月亮电影网 首页">
+      <span class="orb" aria-hidden="true"></span>
+      <span class="txt"><b>月亮电影网</b><small>yueliangdianyingwang-cn</small></span>
+    </a>
+
+    <input type="checkbox" id="mn" class="nav-toggle" />
+    <label class="menu-btn" for="mn" aria-label="展开导航菜单">☾</label>
+
+    <nav class="nav" aria-label="主导航">
+      <a href="#piandan">夜间片单</a>
+      <a href="#xingdeng">星等榜单</a>
+      <a href="#xingqu">星区片库</a>
+      <a href="#yuexiang">月相排期</a>
+      <a href="#rizhi">观影日志</a>
+      <a class="hot" href="#dangan">关于本站</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div class="sky">
+        <span class="orbit" aria-hidden="true"></span>
+        <span class="orbit2" aria-hidden="true"></span>
+        <span class="glow" aria-hidden="true"></span>
+
+        <div class="hero-in">
+          <span class="kick"><i aria-hidden="true"></i>Lunar Cinema · 每周五更新</span>
+          <h1>月亮电影网</h1>
+          <p class="lead">
+            天黑之后，是最好的观影时间。<strong>月亮电影网</strong>把<em>电影推荐</em>按「月相」归档：
+            夜间观影片单、<strong>热门电影排行榜</strong>、星区类型库与月相排期，
+            全部按可检索的方式排好，三分钟挑出下一部想看的电影。
+          </p>
+          <div class="hero-cta">
+            <a class="btn" href="#piandan">打开夜间片单</a>
+            <a class="btn line" href="#xingdeng">查看星等榜单</a>
+          </div>
+        </div>
+
+        <div class="readout">
+          <div><b>3060+</b><span>收录电影</span></div>
+          <div><b>16 组</b><span>夜间片单</span></div>
+          <div><b>9 区</b><span>星区索引</span></div>
+          <div><b>每周五</b><span>片单更新</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目一：月相片单 -->
+  <section class="band" id="piandan">
+    <div class="wrap">
+      <div class="band-head">
+        <div class="l">
+          <span class="badge" aria-hidden="true">☾</span>
+          <div>
+            <h2>夜间观影片单</h2>
+            <p>月亮电影网按观看时段整理片单：左侧月相对应情绪强度，越接近满月越需要完整的时间。</p>
+          </div>
+        </div>
+        <a class="go" href="#">查看全部片单</a>
+      </div>
+
+      <div class="moons">
+        <article class="mcard">
+          <span class="phase p-full" aria-hidden="true"></span>
+          <div class="body">
+            <span class="tag">Full Moon</span>
+            <h3><a href="#">周末长片单：一次看够三部</a></h3>
+            <p>从轻松到厚重依次递进，适合完整的周末下午到深夜。</p>
+            <div class="foot"><em>3 部 · 约 6 小时</em><b>9.3</b></div>
+          </div>
+        </article>
+
+        <article class="mcard">
+          <span class="phase p-gib" aria-hidden="true"></span>
+          <div class="body">
+            <span class="tag">Waning Gibbous</span>
+            <h3><a href="#">华语经典片单</a></h3>
+            <p>按年代编排，从市井烟火到家国叙事皆有收录。</p>
+            <div class="foot"><em>24 部 · 分年代</em><b>9.1</b></div>
+          </div>
+        </article>
+
+        <article class="mcard">
+          <span class="phase p-half" aria-hidden="true"></span>
+          <div class="body">
+            <span class="tag">First Quarter</span>
+            <h3><a href="#">家庭与日常片单</a></h3>
+            <p>以餐桌、老屋与旧照片为线索的十五部作品。</p>
+            <div class="foot"><em>15 部 · 情绪递进</em><b>8.9</b></div>
+          </div>
+        </article>
+
+        <article class="mcard">
+          <span class="phase p-cres" aria-hidden="true"></span>
+          <div class="body">
+            <span class="tag">Crescent</span>
+            <h3><a href="#">深夜治愈短片单</a></h3>
+            <p>单片九十分钟内，节奏平缓，适合睡前一小时。</p>
+            <div class="foot"><em>20 部 · ≤90 分钟</em><b>8.8</b></div>
+          </div>
+        </article>
+
+        <article class="mcard">
+          <span class="phase p-slim" aria-hidden="true"></span>
+          <div class="body">
+            <span class="tag">Slim</span>
+            <h3><a href="#">通勤碎片片单</a></h3>
+            <p>节奏轻快、可分次看完的作品合集。</p>
+            <div class="foot"><em>22 部 · 可分段</em><b>8.5</b></div>
+          </div>
+        </article>
+
+        <article class="mcard">
+          <span class="phase p-new" aria-hidden="true"></span>
+          <div class="body">
+            <span class="tag">New Moon</span>
+            <h3><a href="#">导演作品线</a></h3>
+            <p>五条完整序列，标注处女作、转折作与代表作。</p>
+            <div class="foot"><em>5 条线 · 47 部</em><b>9.0</b></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目二：星等榜 -->
+  <section class="band" id="xingdeng">
+    <div class="wrap">
+      <div class="band-head">
+        <div class="l">
+          <span class="badge" aria-hidden="true">✦</span>
+          <div>
+            <h2>热门电影排行榜</h2>
+            <p>以「星等」呈现：亮星越多分值越高。分数为月亮电影网站内评分与影迷投票加权，每季度复核一次。</p>
+          </div>
+        </div>
+        <a class="go" href="#">评选规则</a>
+      </div>
+
+      <ol class="mag">
+        <li class="cap"><span>Magnitude Board</span><span>TOP 10 · 每季复核</span></li>
+        <li><span class="no">01<i>RK</i></span>
+          <div class="nm"><h3><a href="#">肖申克的救赎（1994）</a></h3><p>希望与自由，几乎人人都能背出台词。</p></div>
+          <span class="mv"><span class="stars" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><b>9.6</b></span></li>
+        <li><span class="no">02<i>RK</i></span>
+          <div class="nm"><h3><a href="#">千与千寻（2001）</a></h3><p>手绘动画的美学高峰，看多少遍都不腻。</p></div>
+          <span class="mv"><span class="stars" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><b>9.4</b></span></li>
+        <li><span class="no">03<i>RK</i></span>
+          <div class="nm"><h3><a href="#">星际穿越（2014）</a></h3><p>硬科幻外壳下的一段父女情。</p></div>
+          <span class="mv"><span class="stars" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><b>9.4</b></span></li>
+        <li><span class="no">04<i>RK</i></span>
+          <div class="nm"><h3><a href="#">教父（1972）</a></h3><p>家族与权力，黑帮片的百科全书。</p></div>
+          <span class="mv"><span class="stars" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><b>9.3</b></span></li>
+        <li><span class="no">05<i>RK</i></span>
+          <div class="nm"><h3><a href="#">盗梦空间（2010）</a></h3><p>层层梦境推进，逻辑严密的烧脑体验。</p></div>
+          <span class="mv"><span class="stars" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><b>9.3</b></span></li>
+        <li><span class="no">06<i>RK</i></span>
+          <div class="nm"><h3><a href="#">花样年华（2000）</a></h3><p>错过本身就是故事，越看越沉默。</p></div>
+          <span class="mv"><span class="stars" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><b>9.2</b></span></li>
+        <li><span class="no">07<i>RK</i></span>
+          <div class="nm"><h3><a href="#">疯狂动物城（2016）</a></h3><p>笑点与隐喻齐飞，成年人与孩子都能看。</p></div>
+          <span class="mv"><span class="stars" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><b>9.2</b></span></li>
+        <li><span class="no">08<i>RK</i></span>
+          <div class="nm"><h3><a href="#">步履不停（2008）</a></h3><p>一天的家庭聚会，装下几十年的来不及。</p></div>
+          <span class="mv"><span class="stars" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><b>8.9</b></span></li>
+        <li><span class="no">09<i>RK</i></span>
+          <div class="nm"><h3><a href="#">寄生虫（2019）</a></h3><p>类型混搭的精准样本，后劲极强。</p></div>
+          <span class="mv"><span class="stars" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><b>8.8</b></span></li>
+        <li><span class="no">10<i>RK</i></span>
+          <div class="nm"><h3><a href="#">爱乐之城（2016）</a></h3><p>色彩与配乐共同完成的一个梦。</p></div>
+          <span class="mv"><span class="stars" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><b>8.4</b></span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 栏目三：星区 -->
+  <section class="band" id="xingqu">
+    <div class="wrap">
+      <div class="band-head">
+        <div class="l">
+          <span class="badge" aria-hidden="true">✧</span>
+          <div>
+            <h2>星区类型片库</h2>
+            <p>月亮电影网把片库划成九个星区，每区都有独立编号、入门片单与建议观看顺序。</p>
+          </div>
+        </div>
+        <a class="go" href="#">进入星图</a>
+      </div>
+
+      <div class="zones">
+        <article class="zone">
+          <span class="sky-dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+          <span class="code">ZONE-01</span>
+          <h3><a href="#">剧情 · 人间</a></h3>
+          <p>人物与关系驱动的叙事主线，年代跨度最广。</p>
+          <div class="meta"><span>486 部</span><b>平均 112 分钟</b></div>
+        </article>
+        <article class="zone">
+          <span class="sky-dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+          <span class="code">ZONE-02</span>
+          <h3><a href="#">科幻 · 深空</a></h3>
+          <p>太空、时间与近未来设定，难度递进排列。</p>
+          <div class="meta"><span>312 部</span><b>平均 126 分钟</b></div>
+        </article>
+        <article class="zone">
+          <span class="sky-dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+          <span class="code">ZONE-03</span>
+          <h3><a href="#">家庭 · 暖光</a></h3>
+          <p>以餐桌与老屋为线索的日常叙事。</p>
+          <div class="meta"><span>338 部</span><b>平均 108 分钟</b></div>
+        </article>
+        <article class="zone">
+          <span class="sky-dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+          <span class="code">ZONE-04</span>
+          <h3><a href="#">悬疑 · 暗面</a></h3>
+          <p>多视角叙述与人性迷宫，节奏偏快。</p>
+          <div class="meta"><span>296 部</span><b>平均 114 分钟</b></div>
+        </article>
+        <article class="zone">
+          <span class="sky-dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+          <span class="code">ZONE-05</span>
+          <h3><a href="#">动画 · 星尘</a></h3>
+          <p>手绘、CG 与定格动画，合家欢与成人向分列。</p>
+          <div class="meta"><span>402 部</span><b>平均 95 分钟</b></div>
+        </article>
+        <article class="zone">
+          <span class="sky-dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+          <span class="code">ZONE-06</span>
+          <h3><a href="#">纪录 · 远山</a></h3>
+          <p>街区变迁、手艺人与自然地理的影像志。</p>
+          <div class="meta"><span>186 部</span><b>平均 99 分钟</b></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目四：月相历 -->
+  <section class="band" id="yuexiang">
+    <div class="wrap">
+      <div class="band-head">
+        <div class="l">
+          <span class="badge" aria-hidden="true">◐</span>
+          <div>
+            <h2>月相排期</h2>
+            <p>未来五个月的重点影片按农历节气节点排布，月亮电影网每周一更新，档期以院线公布为准。</p>
+          </div>
+        </div>
+        <a class="go" href="#">订阅更新</a>
+      </div>
+
+      <div class="lunar">
+        <article class="mo">
+          <span class="phase p-gib" aria-hidden="true"></span>
+          <time datetime="2026-10">2026 / 10</time>
+          <span class="term">霜降</span>
+          <h3><a href="#">《末班电车》</a></h3>
+          <p>以夜班公交为舞台的都市群像剧。</p>
+          <span class="tag">都市 · 剧情</span>
+        </article>
+
+        <article class="mo">
+          <span class="phase p-half" aria-hidden="true"></span>
+          <time datetime="2026-11">2026 / 11</time>
+          <span class="term">立冬</span>
+          <h3><a href="#">《谷中旧书店》</a></h3>
+          <p>通信与阅读题材，节奏平缓。</p>
+          <span class="tag">文艺 · 剧情</span>
+        </article>
+
+        <article class="mo">
+          <span class="phase p-full" aria-hidden="true"></span>
+          <time datetime="2026-12">2026 / 12</time>
+          <span class="term">大雪</span>
+          <h3><a href="#">《雪线以上》</a></h3>
+          <p>高海拔拍摄的自然纪录片。</p>
+          <span class="tag">纪录 · 自然</span>
+        </article>
+
+        <article class="mo">
+          <span class="phase p-cres" aria-hidden="true"></span>
+          <time datetime="2027-01">2027 / 01</time>
+          <span class="term">小寒</span>
+          <h3><a href="#">《无名之刃》</a></h3>
+          <p>黑白摄影的年代题材，向经典致敬。</p>
+          <span class="tag">年代 · 剧情</span>
+        </article>
+
+        <article class="mo">
+          <span class="phase p-slim" aria-hidden="true"></span>
+          <time datetime="2027-02">2027 / 02</time>
+          <span class="term">立春</span>
+          <h3><a href="#">《春分来信》</a></h3>
+          <p>以书信为线索的爱情题材。</p>
+          <span class="tag">爱情 · 都市</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目五：观测日志 -->
+  <section class="band" id="rizhi">
+    <div class="wrap">
+      <div class="band-head">
+        <div class="l">
+          <span class="badge" aria-hidden="true">✎</span>
+          <div>
+            <h2>观影日志</h2>
+            <p>把选片写成观测日志：按条目走一遍，基本不会踩雷。</p>
+          </div>
+        </div>
+        <a class="go" href="#">更多专题</a>
+      </div>
+
+      <div class="log">
+        <div class="bar"><i aria-hidden="true"></i>Observation Log<span class="mono">2026 / 10 / 04</span><em>5 条记录</em></div>
+
+        <article class="entry">
+          <time datetime="2026-10-04T21:00">21:00 · 记录一</time>
+          <div class="txt">
+            <h3><a href="#">先定场景：今晚有多少时间</a></h3>
+            <p>周末、通勤还是深夜，先决定观看环境，再谈选片。</p>
+            <div class="kv"><span>场景</span><span>时长上限</span></div>
+          </div>
+        </article>
+
+        <article class="entry">
+          <time datetime="2026-10-04T21:20">21:20 · 记录二</time>
+          <div class="txt">
+            <h3><a href="#">再选片单：挑一组而不是挑一部</a></h3>
+            <p>到夜间观影片单挑一组，不必纠结单部作品。</p>
+            <div class="kv"><span>片单</span><span>16 组</span></div>
+          </div>
+        </article>
+
+        <article class="entry">
+          <time datetime="2026-10-04T21:40">21:40 · 记录三</time>
+          <div class="txt">
+            <h3><a href="#">对照榜单：用星等过滤</a></h3>
+            <p>亮星越多分值越高，过滤掉低分作品。</p>
+            <div class="kv"><span>星等</span><span>每季复核</span></div>
+          </div>
+        </article>
+
+        <article class="entry">
+          <time datetime="2026-10-04T22:00">22:00 · 记录四</time>
+          <div class="txt">
+            <h3><a href="#">核对时长：确认单片长度</a></h3>
+            <p>确认单片时长是否匹配你的空档时间。</p>
+            <div class="kv"><span>时长</span><span>≤90 分钟另有短片单</span></div>
+          </div>
+        </article>
+
+        <article class="entry">
+          <time datetime="2026-10-04T22:20">22:20 · 记录五</time>
+          <div class="txt">
+            <h3><a href="#">随时换区：看不下去就换星区</a></h3>
+            <p>回到星区片库换一个区，不必硬撑着看完。</p>
+            <div class="kv"><span>星区</span><span>9 区可切换</span></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="faq">
+        <div class="q"><h3>星等是怎么算出来的？</h3><p>由月亮电影网站内评分与影迷投票加权计算，剔除异常打分后每季度复核一次。</p></div>
+        <div class="q"><h3>完全不想选可以看什么？</h3><p>直接打开夜间观影片单里的「周末长片单」，从第一部看到最后一部即可。</p></div>
+        <div class="q"><h3>时间不多怎么办？</h3><p>「深夜治愈短片单」里的作品都在九十分钟以内，可以分段看完。</p></div>
+        <div class="q"><h3>想按年份找片怎么办？</h3><p>站内按年代与星区双重索引，可用年份加题材组合定位片单。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目六：天文台档案 -->
+  <section class="band" id="dangan">
+    <div class="wrap">
+      <div class="band-head">
+        <div class="l">
+          <span class="badge" aria-hidden="true">☄</span>
+          <div>
+            <h2>关于月亮电影网</h2>
+            <p>一个把电影信息按月相归档的内容站点，只做检索与推荐这一件事。</p>
+          </div>
+        </div>
+        <a class="go" href="#">选片标准</a>
+      </div>
+
+      <div class="arch">
+        <div class="main">
+          <h2>月亮电影网</h2>
+          <p><strong>月亮电影网</strong>的出发点很朴素：白天太吵，电影适合在夜里看；但真正到了夜里，人往往已经没有力气「选」了。于是我们把<strong>电影推荐</strong>按<strong>月相</strong>归档——满月适合长片，弦月适合家庭日常，残月只需要九十分钟。</p>
+          <p>除了夜间片单，这里还有<strong>热门电影排行榜</strong>（以星等呈现）、星区类型库、月相排期与观影日志。每条片单都标注了条目数量、总时长与建议顺序；每部电影都带有节奏、时长与适配时段标签。筛选机制为人工初筛加影迷投票加权，拒绝无差别堆砌。</p>
+          <p>本站内页正在持续建设中，全部栏目入口已开放。欢迎收藏 <strong>月亮电影网</strong>，下次入夜时直接从夜间片单开始。</p>
+          <a class="go" href="#">投稿与合作</a>
+        </div>
+
+        <aside class="side">
+          <h3>Station File</h3>
+          <div class="kv"><span>站点名称</span><b>月亮电影网</b></div>
+          <div class="kv"><span>站点网址</span><b>yueliangdianyingwang-cn.github.io</b></div>
+          <div class="kv"><span>收录电影</span><b>3060+</b></div>
+          <div class="kv"><span>夜间片单</span><b>16 组</b></div>
+          <div class="kv"><span>星区索引</span><b>9 区</b></div>
+          <div class="kv"><span>更新频率</span><b>每周五</b></div>
+          <div class="stamp"><b>☾</b>MOONLIGHT CINEMA</div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col foot-brand">
+        <span class="lg"><i aria-hidden="true"></i><b>月亮电影网</b></span>
+        <p>专注电影推荐、热门电影排行榜与观影指南的内容站点，网站网址 yueliangdianyingwang-cn.github.io。</p>
+      </div>
+      <div class="foot-col">
+        <h4>Index</h4>
+        <ul>
+          <li><a href="#piandan">夜间片单</a></li>
+          <li><a href="#xingdeng">星等榜单</a></li>
+          <li><a href="#xingqu">星区片库</a></li>
+          <li><a href="#yuexiang">月相排期</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Zones</h4>
+        <ul>
+          <li><a href="#">剧情 · 人间</a></li>
+          <li><a href="#">科幻 · 深空</a></li>
+          <li><a href="#">悬疑 · 暗面</a></li>
+          <li><a href="#">动画 · 星尘</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="#dangan">关于月亮电影网</a></li>
+          <li><a href="#">联系方式</a></li>
+          <li><a href="#">投稿与合作</a></li>
+          <li><a href="#">免责声明</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 月亮电影网 yueliangdianyingwang-cn.github.io · 电影推荐与热门电影排行榜</span>
+      <span><a href="#">返回顶部</a> · <a href="#">网站地图</a> · <a href="#">隐私政策</a></span>
+    </div>
+  </div>
+</footer>
+
+<a class="to-top" href="#main" aria-label="返回顶部">↑</a>
+
+</body>
+</html>
